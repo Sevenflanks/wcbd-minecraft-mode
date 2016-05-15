@@ -1,5 +1,7 @@
 package org.wcbdmod.common;
 
+import org.wcbdmod.common.proxy.GenericProxy;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
@@ -29,8 +31,8 @@ public class WcbdUtilsMod {
 	public static WcbdUtilsMod instance;
 
 	// 模組定義關聯
-	@SidedProxy(clientSide = "org.wcbdmod.common.ClientProxy", serverSide = "org.wcbdmod.common.ServerProxy")
-	public static ServerProxy proxy;
+	@SidedProxy(clientSide = "org.wcbdmod.common.proxy.ClientProxy", serverSide = "org.wcbdmod.common.proxy.ServerProxy")
+	public static GenericProxy proxy;
 
 	// 模組物件標籤頁
 	public static final CreativeTabs TAB_WCBD_UTILS = new CreativeTabs("wcbdutils") {
@@ -56,7 +58,7 @@ public class WcbdUtilsMod {
 	 */
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-		BlockLoader.init();
+		proxy.init();
 	}
 	
 	@EventHandler

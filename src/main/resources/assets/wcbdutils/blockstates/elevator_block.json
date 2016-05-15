@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "normal": {
+        	"model": "wcbdutils:elevator_block"
+        }
+    }
+}

@@ -1,11 +1,12 @@
 {
-	"parent":"wcbdutils:block/default_cube",
-	"textures":{
+	"parent": "block/cube",
+	"textures": {
         "down": "blocks/iron_block",
         "up": "blocks/iron_block",
         "north": "blocks/diamond_block",
         "east": "blocks/diamond_block",
         "south": "blocks/diamond_block",
-        "west": "blocks/diamond_block"
+        "west": "blocks/diamond_block",
+        "particle": "blocks/lapis_block"
 	}
 }
