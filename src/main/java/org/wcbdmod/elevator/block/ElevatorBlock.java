@@ -1,6 +1,7 @@
 package org.wcbdmod.elevator.block;
 
 import org.wcbdmod.common.WcbdUtilsMod;
+import org.wcbdmod.elevator.item.ElevatorBlockItem;
 
 import net.minecraft.block.material.Material;
 
@@ -16,6 +17,7 @@ public class ElevatorBlock extends GenericBlock {
 	public ElevatorBlock() {
 		super(Material.iron);
 		this.setName(NAME); // 設定方塊名稱
+		this.setItemClass(ElevatorBlockItem.class); // 設定物品的Class
 		this.setCreativeTab(WcbdUtilsMod.TAB_WCBD_UTILS); // 設定在創造模式的標籤頁
 		this.setHardness(10F); // 設定硬度
 	}

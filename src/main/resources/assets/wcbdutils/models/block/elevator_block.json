@@ -7,6 +7,6 @@
         "east": "blocks/diamond_block",
         "south": "blocks/diamond_block",
         "west": "blocks/diamond_block",
-        "particle": "blocks/lapis_block"
+        "particle": "blocks/diamond_block"
 	}
 }

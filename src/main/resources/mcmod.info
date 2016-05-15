@@ -3,7 +3,7 @@
   "modid": "wcbdutils",
   "name": "WCBD Utils",
   "description": "Mod for wcbd server",
-  "version": "${version}",
+  "version": "1.8.9",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",

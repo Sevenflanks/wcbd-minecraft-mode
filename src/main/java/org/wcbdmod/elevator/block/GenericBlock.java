@@ -2,10 +2,12 @@ package org.wcbdmod.elevator.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.ItemBlock;
 
 public class GenericBlock extends Block {
 	
 	private String name;
+	private Class<? extends ItemBlock> itemClass;
 
 	public GenericBlock(Material materialIn) {
 		super(materialIn);
@@ -24,6 +26,14 @@ public class GenericBlock extends Block {
 	public void setName(String name) {
 		this.setUnlocalizedName(name);
 		this.name = name;
+	}
+
+	public Class<? extends ItemBlock> getItemClass() {
+		return itemClass;
+	}
+
+	public void setItemClass(Class<? extends ItemBlock> itemClass) {
+		this.itemClass = itemClass;
 	}
 	
 }
